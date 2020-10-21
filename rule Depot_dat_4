@@ -1,0 +1,10 @@
+rule Depot_dat_4{
+meta:
+description = "rule for prng"
+strings:
+$s1 = {af 00 2c 15}/*"0x152c00af"*/
+$s2 = {6d 4e c6 41} /*"0x41c64ed"*/
+$s3 = {45 69 c9 24 0d 00 00} /* imul r9d, r9d, 0xd24 */ $s4 = {69 d2 da 2e 18 00} /* imul edx, edx, 0x182eda */ $s5 = {b5 81 4e 1b} /*"0x1b4e81b5"*/
+condition:
+3 of them
+}
