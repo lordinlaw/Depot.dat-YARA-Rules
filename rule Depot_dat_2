@@ -1,0 +1,11 @@
+rule Depot_dat_2  {
+meta:
+description = "rules for Bootmgr.dll"
+strings:
+$fname = "mlp.dat" wide ascii nocase
+$fname2 = "bootui.dll" wide ascii nocase
+$callnext1 = "BootUI" wide ascii
+$callnext2 = "GetProcAddress" wide ascii
+condition:
+all of them
+}
