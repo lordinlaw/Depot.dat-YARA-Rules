@@ -1,0 +1,12 @@
+rule Depot_dat_3 {
+meta:
+description = "rules for bootui"
+strings:
+$format1 = "<xzl xnm =" wide ascii nocase
+$format2 = "(...)" wide ascii
+$fname1 = "__????.tmp" wide ascii
+$fname2 = "mlp.dat" wide ascii nocase
+$fname3 = "i.log" wide ascii nocase
+condition:
+all of them
+}
