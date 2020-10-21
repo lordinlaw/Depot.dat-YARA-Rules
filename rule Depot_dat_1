@@ -1,0 +1,8 @@
+rule Depot_dat_1 {
+meta:
+description = "rules for the dropper"
+strings:
+$format1 = "MSCF" wide ascii
+$format2 = "2640" wide ascii
+$format3 = "2300" wide ascii
+$fnames = "depot.dat" wide ascii nocase
