@@ -6,3 +6,9 @@ $format1 = "MSCF" wide ascii
 $format2 = "2640" wide ascii
 $format3 = "2300" wide ascii
 $fnames = "depot.dat" wide ascii nocase
+$fnames2 = "tfd.log" wide ascii nocase
+$cabinet = "Cabinet.dll" wide ascii nocase
+condition:
+all of ($format*) and (1 of ($fnames*)) and $cabinet 
+
+}
